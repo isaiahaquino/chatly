@@ -65,16 +65,12 @@
 Chatly is a dynamic and user-friendly web chat application built using Next.js, designed for seamless communication and collaboration. This platform empowers users to create accounts, form messaging groups, and engage in real-time conversations, resembling the functionality of popular tools like Slack.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
 [![Next][Next.js]][Next-url]
 [![React][React.js]][React-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -102,7 +98,6 @@ To get a local copy up and running follow these simple example steps.
    ```
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -113,7 +108,6 @@ To get a local copy up and running follow these simple example steps.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -128,7 +122,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 See the [open issues](https://github.com/isaiahaquino/chatly/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- LICENSE -->
@@ -136,7 +129,6 @@ See the [open issues](https://github.com/isaiahaquino/chatly/issues) for a full 
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
@@ -146,7 +138,6 @@ Isaiah Aquino - [@LinkedIn](https://www.linkedin.com/in/isaiahaquino/)
 
 Project Link: [https://github.com/isaiahaquino/chatly](https://github.com/isaiahaquino/chatly)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -155,7 +146,6 @@ Project Link: [https://github.com/isaiahaquino/chatly](https://github.com/isaiah
 * [Chat and Messaging Template](https://dribbble.com/shots/16550354-Chat-and-Messaging-Template-Webpixels)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
