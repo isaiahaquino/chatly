@@ -17,6 +17,7 @@ export default function Auth() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log(formData)
 
     const postData = async () => {
       const resp = await fetch("/api/signup", {
@@ -48,9 +49,12 @@ export default function Auth() {
     }
   }
 
-  const changeMode = () => {
+  const changeMode = (e) => {
+    e.preventDefault()
     setNewUser(!newUser)
     setFormData({ email: "", username: "", password: "" })
+    setInvalidLogin(false)
+    setEmailExists(false)
   }
 
   
@@ -66,11 +70,12 @@ export default function Auth() {
           >
             <label className="text-xs font-semibold" htmlFor="email">EMAIL</label>
             <input 
-              type="text"
+              type="email"
               className="bg-black w-[26rem] p-2 rounded-sm text-white mb-4"
               id="email"
               onChange={handleChange}
               value={formData.email}
+              required
             />
 
             <label className="text-xs font-semibold" htmlFor="username">USERNAME</label>
@@ -80,6 +85,7 @@ export default function Auth() {
               id="username"
               onChange={handleChange}
               value={formData.username}
+              required
             />
 
             <label className="text-xs font-semibold" htmlFor="password">PASSWORD</label>
@@ -89,8 +95,9 @@ export default function Auth() {
               id="password"
               onChange={handleChange}
               value={formData.password}
+              required
             />
-
+            
             <button
               type="submit"
               className="w-full py-2 rounded-sm bg-blue text-white"
@@ -115,11 +122,12 @@ export default function Auth() {
           >
             <label className="text-xs font-semibold" htmlFor="email">EMAIL</label>
             <input 
-              type="text"
+              type="email"
               className="bg-black w-[26rem] p-2 rounded-sm text-white mb-4"
               id="email"
               onChange={handleChange}
               value={formData.email}
+              required
             />
             <label className="text-xs font-semibold" htmlFor="password">PASSWORD</label>
             <input 
@@ -128,7 +136,10 @@ export default function Auth() {
               id="password"
               onChange={handleChange}
               value={formData.password}
+              required
             />
+
+            {invalidLogin && <p className="text-red">Invalid login credentials</p>}
 
             <button
               type="submit"
@@ -136,11 +147,9 @@ export default function Auth() {
             >
               Log In
             </button>
-
           </form>
 
-
-          <p className="text-sm self-start text-gray">Need an accout? <span onClick={changeMode} className="text-teal mt-5">Register</span></p>
+          <p className="text-sm self-start text-gray">Need an accout? <span onClick={changeMode} className="text-teal mt-5 hover:cursor-pointer">Register</span></p>
         </div>
       }
     </div>
