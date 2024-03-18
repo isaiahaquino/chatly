@@ -2,8 +2,10 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { compare } from "bcrypt"
 import prisma from "@/prisma/client";
+import { PrismaAdapter } from "@auth/prisma-adapter";
 
 export const authOptions = {
+  // adapter: PrismaAdapter(prisma),
   providers: [
     CredentialsProvider({
       name: 'Credentials',
@@ -34,7 +36,6 @@ export const authOptions = {
     },
     async session({ session, token }) {
       session.user.id = token.id
-      console.log(session)
       return session
     },
     async redirect({ url, baseUrl }) {
